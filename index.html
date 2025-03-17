@@ -36,14 +36,18 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Dearest</a>
+      <a class="navbar-brand" href="#">
+        <img src="img/flower ring.png" alt="our_ring">
+      </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dearest</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="img/flower ring.png" alt="our_ring">
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -51,8 +55,7 @@
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#info">Address</a>
             <a class="nav-link" href="#story">Story</a>
-            <a class="nav-link" href="#gallery">Gallery</a>
-            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gift">Gift</a>
           </div>
         </div>
       </div>
@@ -106,7 +109,7 @@
         </div>
 
         <div class="col-md-6 col-10">
-          <div class="card text-center text-bg-light">
+          <div class="card text-center text-bg-light mb-5">
             <div class="card-header">Resepsi</div>
             <div class="card-body">
               <div class="row justify-content-center">
@@ -198,45 +201,30 @@
     </div>
   </section>
 
-  <!-- RSVP -->
-  <section id="rsvp" class="rsvp fade-in">
+  <!-- Gift -->
+  <section id="gift" class="gift fade-in">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <h2>Konfirmasi Kehadiran</h2>
-          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          <h2>Kirimkan Hadiah</h2>
+          <p class="fw-medium">Kami memahami bahwa kesibukan atau jarak mungkin menghalangi pertemuan. Namun, jika ingin tetap berbagi kebahagiaan, kami akan menerimanya dengan penuh rasa syukur.</p>
         </div>
       </div>
 
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
-        id="my-form">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama">
-          </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="fw-bold">BCA</div>
+              2040601565 - MUHAMMAD IZZUL HAQ
+            </li>
+            <li class="list-group-item">
+              <div class="fw-bold">DANA</div>
+              0881024714214 - MUHAMMAD IZZUL HAQ
+            </li>
+          </ul>
         </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Pilih salah satu</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim</button>
-        </div>
-      </form>
+      </div>
     </div>
   </section>
 
