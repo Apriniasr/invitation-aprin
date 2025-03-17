@@ -24,7 +24,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/pernikahan.png);
+  background-image: url(img/pernikahan.webp);
   background-size: cover;
   background-position: left;
   z-index: -1;
@@ -322,7 +322,7 @@ footer h4{
 .fade-in {
   opacity: 0;
   transform: translateY(30px); /* Sedikit turun ke bawah */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.show {
