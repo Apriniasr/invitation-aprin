@@ -355,12 +355,22 @@ footer h4{
     overflow: hidden;
   }
 
+  .mynavbar img {
+    height: 50px;
+    width: auto;
+  }
+
 }
 
 /* mobile phone */
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+  }
+
+  .mynavbar img {
+    height: 30px;
+    width: auto;
   }
 
 }
